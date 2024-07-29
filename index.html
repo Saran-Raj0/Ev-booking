@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eV Finder Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="left-section">
+      <img src="assets/login_image.png" alt="Login" class="login-image">
+    </div>
+    <div class="right-section">
+      <div class="login-content">
+        <div class="title-container">
+          <img src="assets/logo.png" alt="Logo" class="logo">
+          <h2>eV Finder</h2>
+        </div>
+        <p class="sub-head">Hi, Welcome Back</p>
+        <p class="sub-sub">Login to continue</p>
+        <button class="google-button" id="google-button">
+          <img src="assets/google_logo.png" alt="Google" class="google-logo">
+          Sign in with Google
+        </button>
+        <p>or</p>
+        <form id="login-form">
+          <input
+            type="text"
+            placeholder="Email"
+            class="first-input-field"
+            id="email-input"
+          >
+          <p class="error" id="email-error">Please enter a BITSathy Gmail address.</p>
+          <div class="password-container">
+            <input
+              type="password"
+              placeholder="Password"
+              class="input-field"
+              id="password-input"
+            >
+            <img
+              src="assets/close_eye.png"
+              alt="Toggle visibility"
+              class="eye-icon"
+              id="toggle-password"
+            >
+          </div>
+          <button
+            class="sign-in-button"
+            type="submit"
+            id="submit-button"
+          >
+            Sign In
+          </button>
+        </form>
+        <p class="footer">Sign In with your BITSathy Account</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

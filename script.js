@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('Login successful');
 
       // Redirect to home.html
-      window.location.href = 'Home page/home.html';
+      window.location.href = 'home.html';
     }
   });
 });

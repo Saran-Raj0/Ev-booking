@@ -34,7 +34,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e0f7f3;
+  background-color: #C8FEEC;
   padding: 20px;
 }
 
@@ -58,7 +58,7 @@ body, html {
 .logo {
   width: 65px;
   height: 65px;
-  margin-right: 40px;
+  margin-left: -25px;
   margin-top: -170px;
 }
 
@@ -66,7 +66,7 @@ h2 {
   font-size: 40px;
   font-weight: bold;
   margin: 25px 0;
-  margin-left: 10px;
+  margin-left: 20px;
   width: 100%;
   margin-top: -140px;
 }
@@ -100,12 +100,16 @@ h2 {
   font-size: 16px;
   width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s;
+  transition: background-color 0.2s, box-shadow 0.1s;
   margin-bottom: 40px;
 }
 
 .google-button:active {
   background-color: #f8f8f8ce;
+}
+
+.google-button:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .google-logo {
@@ -142,6 +146,7 @@ h2 {
 
 .first-input-field:hover, .input-field:hover {
   background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .password-container {
@@ -181,6 +186,7 @@ h2 {
 
 .sign-in-button:hover {
   background-color: #41a14c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .sign-in-button:active {
@@ -215,7 +221,16 @@ h2 {
     width: 100%;
     justify-content: center;
     height: 100vh;
+    background-color: #ffffff;
   }
+
+  .google-button {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .google-button:active{
+    background-color: #f7f7f7;
+  }
+  
 
   .login-content {
     padding: 10px;

@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden; /* Prevent horizontal overflow */
+    width: 100vw; /* Ensure full viewport width */
 }
 
 .upper-section {
@@ -26,7 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0%;
+    margin-top: clamp(10px, 2vh, 20px); /* Adjust spacing dynamically */
     padding-left: 15%;
     padding-right: 5%;
 }
@@ -50,7 +51,7 @@ body {
     color: #000;
     position: absolute;
     left: 5%;
-    top: 28%;
+    top: clamp(20px, 25vh, 300px); /* Adjust top spacing dynamically */
 }
 
 .mob, .group{
@@ -82,7 +83,6 @@ body {
     color: #000;
     margin-top: 3%;
 }
-
 
 .content h2 span {
     color: #00B574;
@@ -174,7 +174,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) and (min-height: 700px) {
-    .header{
+    .header {
         padding: 10px;
     }
     
@@ -193,7 +193,6 @@ body {
         align-items: center;
         left: 5%;
     }
-
 }
 
 @media only screen and (max-width: 1200px) {
@@ -234,7 +233,7 @@ body {
         margin-right: 5%;
     }
 
-    .group{
+    .group {
         display: block;
         position: relative;
         top: -45%;
@@ -245,7 +244,7 @@ body {
         width: 70%;
         position: absolute;
         text-align: left;
-        top: 150px;
+        top: clamp(14px, 50%, 150px);
     }
 
     .des, .dek {
@@ -329,7 +328,7 @@ body {
 
     /* Lower section */
     .lower-section {
-        height: 55vh; /* 55% of viewport height */
+        height: clamp(50vh, 55vh, 60vh); /* 55% of viewport height */
         background-color: #ffffff;
         border-radius: 30px 30px 0 0;
         margin-top: 0;
